@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+body{
+    background-color: #FCE3C5;
+}
+h1{
+    text-align: center;
+}
+h2{
+    color: #813802;
+    font-size: 28px;
+    border-bottom:3px dotted #813802;
+    padding: 0px 0px 0px 30px ;
+    margin-top: 0;
+}
+ul{
+    list-style: none;
+    padding: 0%;
+}
+.g_nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer{
+    background-image: url(../images/footer_illu.svg);
+    background-repeat: repeat-x;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+.mv{
+    width: 100%;
+}
+.shopinfo_box{
+    display: flex;
+    gap: 60px;
+    background: transparent;
+    padding: 1%;
+}
+.shopinfo_box img{
+    display: flex;
+    width: 400px;
+    height: auto;
+
+}
+
+.shopname{
+    font-weight: 700;
+}
+
+
+table{
+    border-collapse: collapse;
+}
+th,td{
+    padding: 8px;
+    border: 1px solid #973A35;
+    text-align: left;
+
+}
+
+
+.map{
+    width: 600px;
+    height: auto;
+}
+
+.map_text{
+    font-weight: 700px;
+}
+
+form div{
+    padding: 12px;
+    border-bottom: 1px dashed #707070    
+}
+select{
+    width: 30em;
+    font-size: 16px;
+}
+
+input[name="subject"]{
+    width: 30em;
+}
+
+textarea{
+    width: 30em;
+    height: 6em;
+}
+
+input[type="submit"]{
+    margin: 20px 0;
+    width: 30em;
+}
+
+.popup-container {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 500px;
+    background-color: yellow;
+    border: 1px solid red;
+    text-align: center;
+    font-size: 25px;
+}
+
+.close-btn {
+    background-color: brown;
+    color: white;
+    font-size: 12px;
+    margin: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.menuitem_box{
+    display: flex;
+    gap: 60px;
+    background: transparent;
+    padding: 1%;
+}
+.menuitem_box img{
+    display: flex;
+    width: 400px;
+    height: auto;
+
+}
+@media only screen and (max-width: 767px) {
+
+    body {
+    background-color: #FCE3C5;
+    padding: 10px;
+    }
+
+    h1 {
+    font-size: 24px;
+    }
+
+    ul.g_nav {
+    flex-wrap: wrap;
+    }
+
+    ul.g_nav li {
+    flex-basis: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+    }
+
+    .menuitem_box {
+    flex-direction: column;
+    gap: 20px;
+    }
+
+    .menuitem_box img {
+    width: 100%;
+    }
+
+    .menuitem_box div {
+    text-align: center;
+    }
+
+    .shopname {
+    display: block;
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>上新庄にある.淡路バーガー</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <head> </head>
+  <body>
+    <div class="wrap">
+      <link rel="body" href="css/style.css" />
+      <header>
+        <img src="images/hum_illu.svg" alt="ハンバーガー" />
+        <h1><img src="images/logo.svg" alt="淡路バーガー" /></h1>
+        <nav>
+          <ul class="g_nav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="shopping.html">SHOPPING</a></li>
+            <li><a href="access.html">ACCESS</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="inquiry.html">INQUIRY</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div id="popup" class="popup-container">
+        <p>
+          新メニュー<br />
+          「サマーバーガー」<br />
+          発売中！
+        </p>
+        <button id="closeBtn" class="close-btn">閉じる</button>
+      </div>
+
+      <main>
+        <p>大きな口で食らいつく淡路バーガー</p>
+        <img class="mv" src="images/mv@2x.png" alt="淡路バーガー" />
+        <section>
+          <h2>News</h2>
+          <ul>
+            <li>4月26日（火）　春の新メニュー『アボガドバーガー』発売開始！</li>
+            <li>
+              4月12日（火）　野々宮神社春祭り出店のため、お店は休業させていただきます。
+            </li>
+            <li>
+              4月5日（火）　18時からアコースティックギターデュオ「LALALA」のライブを開催します。
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer>
+        <p>©Copyright BURGER JAPAN. All rights reserved.</p>
+      </footer>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("#popup").hide();
+
+        setTimeout(function () {
+          $("#popup").show();
+        }, 3000);
+
+        $("#closeBtn").click(function () {
+          $("#popup").hide();
+        });
+      });
+    </script>
+  </body>
+</html>

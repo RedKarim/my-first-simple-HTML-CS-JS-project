@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inquiry | 上新庄にある.淡路バーガー</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <head> </head>
+  <body>
+    <div class="wrap">
+      <link rel="body" href="css/style.css" />
+      <header>
+        <img src="images/hum_illu.svg" alt="ハンバーガー" />
+        <h1><img src="images/logo.svg" alt="淡路バーガー" /></h1>
+        <nav>
+          <ul class="g_nav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="shopping.html">SHOPPING</a></li>
+            <li><a href="access.html">ACCESS</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="inquiry.html">INQUIRY</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h2>INQUIRY</h2>
+        <form action="result.hrml" method="get">
+          <div>
+            お問い合わせの種類
+            <label for="kind">お問い合わせの種類</label><br />
+            <select name="お問い合わせの種類" id="kind">
+              <option value="ご予約">ご予約</option>
+              <option value="イベントについて">イベントについて</option>
+              <option value="その他のお問合せ">その他のお問合せ</option>
+            </select>
+          </div>
+          <div>
+            AWAJI BURGERにご来店いただいたことはありますか。
+            <label
+              ><input
+                type="radio"
+                name="come"
+                value="はい"
+                id=""
+                checked
+              />はい</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="come"
+                value="いいえ"
+                id=""
+              />いいえ</label
+            >
+          </div>
+          <div>
+            当カフェをお尻なったきっかけは？
+            <label
+              ><input
+                type="checkbox"
+                name="cue"
+                value="知り合いの紹介で"
+                id=""
+              />知り合いの紹介で</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="cue"
+                value="雑誌・Webサイトで見て"
+                id=""
+              />雑誌・Webサイトで見て</label
+            >
+          </div>
+          <div>
+            <label
+              >お問い合わせの件名<br />
+              <input type="text" name="subject" id="" placeholder="お問合せ"
+            /></label>
+          </div>
+
+          <div>
+            <label
+              >お問い合わせの具体的な内容<br />
+              <textarea
+                name="message"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="お問い合わせの具体的な内容入力してください"
+              ></textarea>
+            </label>
+            <label><input type="submit" name="submit" value="送信" /></label>
+          </div>
+        </form>
+      </main>
+
+      <footer>
+        <p>©Copyright BURGER JAPAN. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
